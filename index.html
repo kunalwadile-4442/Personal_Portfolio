@@ -364,20 +364,21 @@
         <!-- Reach -->
         <div class="column right">
           <div class="text">Message me</div>
-          <form action="#" method="POST">
+          <form action="https://formspree.io/f/moqggwnp"
+          method="POST">
             <div class="fields">
               <div id="name" class="field name">
-                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Your Name" name="name" autocomplete="off" required>
               </div>
               <div id="mail" class="field email">
-                <input type="email" placeholder="Your Email" required>
+                <input type="email" placeholder="Your Mail" name="email"  autocomplete="off" required>
               </div>
             </div>
             <div id="subject" class="field">
-              <input type="text" placeholder="Subject" required>
+              <input type="text" placeholder="Subject" name="subject"  autocomplete="off" required>
             </div>
             <div id="message" class="field textarea">
-              <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+              <textarea cols="30" rows="10" placeholder="Message.." name="message"  autocomplete="off" required></textarea>
             </div>
             <div class="button-area">
               <button onclick="sendEmail()" type="submit">Send
