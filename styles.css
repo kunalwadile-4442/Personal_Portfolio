@@ -967,6 +967,54 @@
     animation: pulsate 1s ease-in-out;
     color: #ffffff;
   }
-  
+  /* logo whatapp */
 
-  
+ /* styles.css or your custom CSS file */
+
+.whatsapp-logo {
+  position: fixed;
+  left: -100px; /* Start off-screen on the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 1000; /* Ensure it's above other content */
+  opacity: 0; /* Start with opacity 0 for entry animation */
+  animation: slideIn 1s forwards, floatAnimation 3s infinite alternate; /* Slide-in animation and floating animation */
+}
+
+.whatsapp-logo img {
+  width: 60px; /* Adjust size of the WhatsApp logo */
+  height: auto;
+  border-radius: 50%; /* Optional: Rounded shape for the logo */
+  border: 2px solid #fff; /* Optional: Border around the logo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.whatsapp-logo:hover img {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Slide-in animation keyframes */
+@keyframes slideIn {
+  from {
+    left: -100px; /* Start off-screen on the left */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    left: 10px; /* Slide to 10px from the left */
+    opacity: 1; /* Fade in */
+  }
+}
+
+/* Floating animation keyframes */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
