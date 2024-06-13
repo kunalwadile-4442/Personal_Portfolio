@@ -248,10 +248,10 @@
     margin: 5px 0;
   }
   
-  /* Linear Gradient */
+  /* Linear Gradient  home */
   .home .home-content .text-3 span {
     color: #F4BB44;
-    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    background: #F4BB44;    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
@@ -311,10 +311,10 @@
     margin-bottom: 10px;
   }
   
-  /* Linear Gradiant */
+  /* Linear Gradiant about */
   .about .about-content .right .text span {
     /* color: #F4BB44; */
-    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    background: #d03939;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
