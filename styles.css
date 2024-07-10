@@ -342,66 +342,94 @@
     animation: pulsate 1s ease-in-out;
     color: #000;
   }
-  
-  /*  Service  */
-  .services,
-  .projects {
-    color: #fff;
-    background: #111;
-  }
-  
-  .services .title::before,
-  .projects .title::before {
-    background: #fff;
-  }
-  
-  .services .title::after,
-  .projects .title::after {
-    background: #111;
-    content: "Certificates...";
-  }
-  
-  .services .serv-content .card {
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 10px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .services .serv-content .card:hover {
-    background: #F4BB44;
-  }
-  
-  .services .serv-content .card .box {
-    transition: all 0.3s ease;
-  }
-  
-  .services .serv-content .card:hover .box {
-    transform: scale(1.05);
-  }
-  
-  .services .serv-content .card i {
-    font-size: 50px;
-    color: #888e8d;
-    background: linear-gradient(135deg, #041d3d, #fff, crimson);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: color 0.3s ease;
-  }
-  
-  .services .serv-content .card:hover i {
-    color: #fff;
-  }
-  
-  .services .serv-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-  }
-  
+  /* Service */
+.services,
+.projects {
+  color: #fff;
+  background: #111;
+}
+
+.services .title::before,
+.projects .title::before {
+  background: #fff;
+}
+
+.services .title::after,
+.projects .title::after {
+  background: #111;
+  content: "Certificates...";
+}
+
+.services .serv-content {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.card{
+  margin-bottom: 20px;
+}
+
+.services .serv-content .card {
+  min-width: calc(33.33% - 20px);
+  margin-right: 20px;
+  background: #222;
+  text-align: center;
+  border-radius: 10px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+  background: #F4BB44;
+}
+
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+  font-size: 50px;
+  color: #888e8d;
+  background: linear-gradient(135deg, #041d3d, #fff, crimson);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.download-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-btn {
+  background: #F4BB44;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background: #fff;
+}
+
   /*  Skills  */
   .skills {
     background: radial-gradient(#fbf0c3, 	#858596);
@@ -492,7 +520,7 @@
   }
   
   .skills-content .right .html::before {
-    width: 90%;
+    width: 80%;
   }
   
   .skills-content .right .css::before {
@@ -500,15 +528,15 @@
   }
   
   .skills-content .right .js::before {
-    width: 50%;
+    width: 70%;
   }
   
   .skills-content .right .bootstraps::before {
-    width: 65%;
+    width: 85%;
   }
   
   .skills-content .right .react::before {
-    width: 60%;
+    width: 70%;
   }
   
   /*  Projects  */
@@ -1018,3 +1046,10 @@
     transform: translateY(0);
   }
 }
+
+
+
+/* neww */
+
+
+
